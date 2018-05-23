@@ -16,7 +16,6 @@
 			"name": "Country",
 			"primary_key": "uuid",
 			"description": "A country",
-			"table": "countries",
 			"fields": [
 				{
 					"label": "Name",
@@ -58,7 +57,6 @@
 				{
 					"entity": "Citizen",
 					"type": "one-many",
-					"name": "Citizens",
 					"eager": false,
 					"full": false
 				},
@@ -75,7 +73,6 @@
 			"name": "Capital",
 			"primary_key": "uuid",
 			"description": "Capital city of a country",
-			"table": "capitals",
 			"fields": [
 				{
 					"label": "Capital",
@@ -105,7 +102,6 @@
 			"name": "Citizen",
 			"primary_key": "uuid",
 			"description": "A human being belonging to a country",
-			"table": "citizens",
 			"fields": [
 				{
 					"label": "Surname",
@@ -174,7 +170,6 @@
 			"name": "Tag",
 			"primary_key": "uuid",
 			"description": "Tags can be used to categories countries",
-			"table": "tags",
 			"fields": [
 				{
 					"label": "Name",
@@ -193,7 +188,6 @@
 			"relationships": [
 				{
 					"entity": "Country",
-					"name": "Countries",
 					"type": "many-many",
 					"eager": false,
 					"full": false

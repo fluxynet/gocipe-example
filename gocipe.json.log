@@ -1,21 +1,21 @@
-[Recipe Hash] 2cdecd62f8cc1e3e1b51a96e61f1519e5d31bc3eb806037239eeb7707acf58b5
+[Recipe Hash] 2684eeb0295ee5f2f4177b7c406ae5c8553e74d3b44b524a3eeb29e37d1363f0
 [Wrote] /home/fx/go/src/github.com/fluxynet/gocipe-example/models/filters.gocipe.go
 [Skipped] Generation skipped [GenerateHTTP]
-[Wrote] /home/fx/go/src/github.com/fluxynet/gocipe-example/schema/schema_tags.gocipe.sql
+[Wrote] /home/fx/go/src/github.com/fluxynet/gocipe-example/schema/schema_.gocipe.sql
+[Wrote] /home/fx/go/src/github.com/fluxynet/gocipe-example/schema/schema_.gocipe.sql
 [Wrote] /home/fx/go/src/github.com/fluxynet/gocipe-example/app/bootstrap.gocipe.go
-[Wrote] /home/fx/go/src/github.com/fluxynet/gocipe-example/schema/schema_capitals.gocipe.sql
 [Wrote] /home/fx/go/src/github.com/fluxynet/gocipe-example/.env.dist
-[Wrote] /home/fx/go/src/github.com/fluxynet/gocipe-example/schema/schema_countries.gocipe.sql
-[Wrote] /home/fx/go/src/github.com/fluxynet/gocipe-example/schema/schema_citizens.gocipe.sql
-[Wrote] /home/fx/go/src/github.com/fluxynet/gocipe-example/models/tag/tag_crud.gocipe.go
+[Wrote] /home/fx/go/src/github.com/fluxynet/gocipe-example/schema/schema_.gocipe.sql
+[Wrote] /home/fx/go/src/github.com/fluxynet/gocipe-example/schema/schema_.gocipe.sql
 [Wrote] /home/fx/go/src/github.com/fluxynet/gocipe-example/models/capital/capital_crud.gocipe.go
 [Wrote] /home/fx/go/src/github.com/fluxynet/gocipe-example/models/country/country_crud.gocipe.go
-[Wrote] /home/fx/go/src/github.com/fluxynet/gocipe-example/models/tag/tag.gocipe.go
-[Skipped] Generation skipped [GenerateCRUDHooks]
+[Wrote] /home/fx/go/src/github.com/fluxynet/gocipe-example/models/citizen/citizen_crud.gocipe.go
+[Wrote] /home/fx/go/src/github.com/fluxynet/gocipe-example/models/tag/tag_crud.gocipe.go
+[Wrote] /home/fx/go/src/github.com/fluxynet/gocipe-example/models/capital/capital.gocipe.go
 [Wrote] /home/fx/go/src/github.com/fluxynet/gocipe-example/models/country/country.gocipe.go
 [Skipped] Generation skipped [GenerateCRUDHooks]
-[Wrote] /home/fx/go/src/github.com/fluxynet/gocipe-example/models/capital/capital.gocipe.go
-[Skipped] Generation skipped [GenerateCRUDHooks]
-[Wrote] /home/fx/go/src/github.com/fluxynet/gocipe-example/models/citizen/citizen_crud.gocipe.go
 [Wrote] /home/fx/go/src/github.com/fluxynet/gocipe-example/models/citizen/citizen.gocipe.go
+[Wrote] /home/fx/go/src/github.com/fluxynet/gocipe-example/models/tag/tag.gocipe.go
+[Skipped] Generation skipped [GenerateCRUDHooks]
+[Skipped] Generation skipped [GenerateCRUDHooks]
 [Skipped] Generation skipped [GenerateCRUDHooks]
