@@ -1,0 +1,199 @@
+{
+    "bootstrap": {
+        "generate": true,
+        "settings": []
+    },
+    "crud": {
+		"create": true,
+		"read": true,
+		"read_list": true,
+		"update": true,
+		"delete": true,
+		"merge": true
+    },
+    "entities": [
+		{
+			"name": "Country",
+			"primary_key": "uuid",
+			"description": "A country",
+			"fields": [
+				{
+					"label": "Name",
+					"serialized": "name",
+					"property": {
+						"name": "Name",
+						"type": "string"
+					},
+					"schema": {
+						"field": "name",
+						"type": "VARCHAR(255)",
+						"nullable": false
+					},
+					"filterable": true
+				},
+				{
+					"label": "Continent",
+					"property": {
+						"name": "Continent",
+						"type": "string"
+					},
+					"schema": {
+						"field": "continent",
+						"type": "VARCHAR(255)",
+						"nullable": false
+					},
+					"filterable": true
+				}
+			],
+			"relationships": [
+				{
+					"entity": "Capital",
+					"type": "one-one",
+					"name": "Capital",
+					"serialized": "capital",
+					"eager": true,
+					"full": true
+				},
+				{
+					"entity": "Citizen",
+					"type": "one-many",
+					"name": "Citizens",
+					"eager": false,
+					"full": false
+				},
+				{
+					"entity": "Tag",
+					"type": "many-many",
+					"name": "Tags",
+					"eager": false,
+					"full": true
+				}
+			]
+		},
+		{
+			"name": "Capital",
+			"primary_key": "uuid",
+			"description": "Capital city of a country",
+			"fields": [
+				{
+					"label": "Capital",
+					"property": {
+						"name": "Capital",
+						"type": "string"
+					},
+					"schema": {
+						"field": "Capital",
+						"type": "string",
+						"nullable": false
+					},
+					"filterable": true
+				}
+			],
+			"relationships": [
+				{
+					"entity": "Country",
+					"type": "one-one",
+					"name": "Country",
+					"eager": true,
+					"full": false
+				}
+			]
+		},
+		{
+			"name": "Citizen",
+			"primary_key": "uuid",
+			"description": "A human being belonging to a country",
+			"fields": [
+				{
+					"label": "Surname",
+					"property": {
+						"name": "Surname",
+						"type": "string"
+					},
+					"schema": {
+						"field": "surname",
+						"type": "VARCHAR(255)",
+						"nullable": false
+					},
+					"filterable": true
+				},
+				{
+					"label": "OtherNames",
+					"property": {
+						"name": "OtherNames",
+						"type": "string"
+					},
+					"schema": {
+						"field": "othernames",
+						"type": "VARCHAR(255)",
+						"nullable": false
+					},
+					"filterable": true
+				},
+				{
+					"label": "Gender",
+					"property": {
+						"name": "Gender",
+						"type": "string"
+					},
+					"schema": {
+						"field": "gender",
+						"type": "CHAR(1)",
+						"nullable": false
+					},
+					"filterable": true
+				},
+				{
+					"label": "Date of Birth",
+					"property": {
+						"name": "DOB",
+						"type": "time.Time"
+					},
+					"schema": {
+						"field": "dob",
+						"type": "DATE",
+						"nullable": false
+					},
+					"filterable": true
+				}
+			],
+			"relationships": [
+				{
+					"entity": "Country",
+					"type": "many-one",
+					"name": "Country",
+					"eager": true,
+					"full": true
+				}
+			]
+		},
+		{
+			"name": "Tag",
+			"primary_key": "uuid",
+			"description": "Tags can be used to categories countries",
+			"fields": [
+				{
+					"label": "Name",
+					"property": {
+						"name": "Name",
+						"type": "string"
+					},
+					"schema": {
+						"field": "name",
+						"type": "VARCHAR(255)",
+						"nullable": false
+					},
+					"filterable": true
+				}
+			],
+			"relationships": [
+				{
+					"entity": "Country",
+					"type": "many-many",
+					"eager": false,
+					"full": false
+				}
+			]
+		}
+    ]
+}
