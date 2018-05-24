@@ -57,6 +57,7 @@
 				{
 					"entity": "Citizen",
 					"type": "one-many",
+					"name": "Citizen",
 					"eager": false,
 					"full": false
 				},
