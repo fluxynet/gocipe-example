@@ -147,7 +147,7 @@
 					"label": "Date of Birth",
 					"property": {
 						"name": "DOB",
-						"type": "time.Time"
+						"type": "time"
 					},
 					"schema": {
 						"field": "dob",
